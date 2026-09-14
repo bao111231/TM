@@ -93,7 +93,7 @@ export function ObjectToQueryString(object){
  */
 export var options={
     //默认翻译引擎
-    defaulttransengine:"yd"
+    defaulttransengine:"bd"
 }
 /**
  * 获取配置参数

@@ -8,7 +8,9 @@ const resolveFile=function(filePath){
 const options={
     //源文件
     srcPath:"src/webTranslate.js",
-    //编译后文件
+    //rollup打包后的中间文件（不含脚本头，随后与脚本头/配置块合并为最终产物）
+    bundlePath:"dist/webTranslate.bundle.js",
+    //最终编译产物
     distPath:"dist/webTranslate.js",
     //TM配置
     tmconfigPath:"src/webTranslate.tmconfig.js",
@@ -19,7 +21,7 @@ const inputOptions={
 }
 const outputOptions={
     output:{
-        file:resolveFile(options.distPath),
+        file:resolveFile(options.bundlePath),
         format:"iife"
     },
 }

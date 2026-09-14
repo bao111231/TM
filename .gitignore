@@ -1,2 +1,4 @@
 /**/node_modules
 /**/.vscode
+# 编译产物不上传（用户自行构建或使用本地已编译版本）
+webTranslate/dist/

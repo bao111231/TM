@@ -19,6 +19,7 @@
 // @connect      fanyi.youdao.com
 // @connect      dict.youdao.com
 // @connect      fanyi.baidu.com
+// @connect      fanyi-api.baidu.com
 // @connect      shared.ydstatic.com
 // @require      https://cdn.jsdelivr.net/npm/jquery@2.2.3/dist/jquery.min.js
 // @require      https://cdn.jsdelivr.net/npm/jquery.md5@1.0.2/index.min.js
