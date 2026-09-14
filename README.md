@@ -14,5 +14,15 @@ Tampermonkey 是一款免费的浏览器扩展和最为流行的用户脚本管�
 - *webTranslate(网页翻译助手)*[点此安装脚本](https://greasyfork.org/zh-CN/scripts/389784-%E7%BD%91%E9%A1%B5%E7%BF%BB%E8%AF%91%E5%8A%A9%E6%89%8B)
     - 自行选择谷歌翻译和有道词典翻译以及选择中文，英文，韩文，日文，法文等语言在网页上进行划词翻译和输入文本翻译。
 
+#### ⭐ webTranslate 使用百度翻译前必读
+
+`webTranslate` 的百度引擎需要你自己的 **百度翻译开放平台 AppID + API Key** 才能使用（AI 文本翻译接口，Bearer Token 鉴权）。
+
+1. 到 [百度翻译开放平台](https://fanyi-api.baidu.com/) 登录 → 注册开发者 → (建议)实名认证；
+2. 管理控制台 → **开发者信息**：复制 **AppID**，创建/复制 **API Key**；
+3. 打开 `webTranslate/dist/webTranslate.js`（已编译产物），在文件开头的 `BAIDU_TRANSLATE_CONFIG` 中填入；或按 `webTranslate/README.md` 的"从源码构建"自行编译后填写。
+
+> 详细注册 + 配置教程见：[webTranslate/README.md](webTranslate/README.md)。未配置时不发请求，面板会给出中文提示。
+
 - *ifmRadio(iFM-网络收音机广播电台)*[点此安装脚本](https://greasyfork.org/zh-CN/scripts/411743-ifm-%E7%BD%91%E7%BB%9C%E6%94%B6%E9%9F%B3%E6%9C%BA%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0)
     - FM网络收音机，广播电台在线收听。
